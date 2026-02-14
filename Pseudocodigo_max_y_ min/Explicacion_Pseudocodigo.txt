@@ -1,0 +1,23 @@
+Algoritmo Brevemente Explicado
+
+-Inicio: Primero, se declara un arreglo con 6 espacios para números enteros y se definen 4 variables que nos servirán para atrapar los resultados: max1, max2, min1 y min2.
+
+-Inicialización: A estas variables les ponemos valores de "relleno" muy grandes o muy pequeños. Esto se hace para que, en cuanto el programa vea el primer número del arreglo, lo acepte de una vez como el más grande o el más chico momentáneo.
+
+-Recorrido Único: Se arranca un ciclo (un Para) que va desde la posición 1 hasta la 6. La regla de oro es que solo pasaremos por cada número una sola vez.
+
+-Evaluación de los más grandes (Máximos): * Si el número que estamos viendo es más grande que el que tenemos guardado en max1, entonces el que estaba de primero baja al puesto de max2, y el nuevo número se queda con el puesto de max1.
+
+-Si el número no le gana al primero, pero sí es más grande que el que tenemos en max2, simplemente actualizamos el segundo puesto.
+
+-Evaluación de los más chicos (Mínimos): Hacemos lo mismo pero al revés. Si el número es más pequeño que nuestro min1, el que era el más chico pasa a ser el segundo más chico (min2), y el nuevo número se queda como el más pequeño de todos.
+
+-Cierre: Ya que el ciclo termina de revisar los 6 números, el programa simplemente imprime los valores que quedaron atrapados en max2 y min2.
+
+Análisis de complejidad:
+-Tiempo (notación O):  Mi algoritmo solo realiza un único recorrido (un solo ciclo Para). Al no usar ciclos anidados (un ciclo dentro de otro) y al no ordenar el arreglo, el programa solo toca cada dato una vez. Si el arreglo tiene $n$ elementos, el programa hace $n$ comparaciones. Es la velocidad más alta que se puede conseguir para este problema
+
+-Espacio (notación O):Solo estoy utilizando cuatro variables fijas (max1, max2, min1, min2). Mi código no crea copias del arreglo ni genera nuevas estructuras de datos que crezcan con la entrada. El consumo de memoria es mínimo y siempre es el mismo.
+
+Cumplí con la pista del ingeniero implementando una lógica de relevos. Mientras el ciclo recorre el arreglo:
+
