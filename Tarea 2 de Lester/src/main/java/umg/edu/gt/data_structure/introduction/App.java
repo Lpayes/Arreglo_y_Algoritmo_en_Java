@@ -33,7 +33,7 @@
 /* 33 */       System.out.print(n + " ");
 /*    */     }
 
-             System.out.println();// agregue salto de linea para separar los resultados juntos
+             System.out.println();// Agregue salto de linea para separar los resultados juntos
 /*    */ 
 /*    */    
 /* 37 */     QuickSort quick = new QuickSort();
@@ -46,7 +46,7 @@
 /*    */ 
 /*    */     
 /* 46 */     int[] arr2 = { 10, 7, 8, 9, 1, 5 };
-/* 47 */     Arrays.sort(arr2);// utiliza Arrays.sort el cual es un metodo ya implementado dentro de java.util.Arrays
+/* 47 */     Arrays.sort(arr2);// Utiliza Arrays.sort el cual es un metodo ya implementado dentro de java.util.Arrays
 /* 48 */     System.out.println("\nUse sort: " + Arrays.toString(arr2));
 
              int[] nums = {10, 7, 8, 9, 1, 5};
